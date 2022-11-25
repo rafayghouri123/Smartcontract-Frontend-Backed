@@ -22,9 +22,7 @@ export default function ManualHeader() {
       // enableWeb3({provider: window.localStorage.getItem("connected")}) // add walletconnect
     }
   }, [isWeb3Enabled]);
-  // no array, run on every render
-  // empty array, run once
-  // dependency array, run when the stuff in it changesan
+
 
   useEffect(() => {
     Moralis.onAccountChanged((account) => {
